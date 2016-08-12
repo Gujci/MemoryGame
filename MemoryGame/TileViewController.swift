@@ -54,6 +54,7 @@ class TileViewController: UIViewController {
     
     var state: TileState = .Back {
         willSet(newState) {
+            guard state != newState else { return }
             UIView.transitionFromView(currentlyVisibleImageView,
                                       toView: nextVisibleImageView,
                                       duration: 0.3,
@@ -83,6 +84,6 @@ extension TileViewController {
 extension TileViewController {
     
     @IBAction func tileTapped(sender: UITapGestureRecognizer) {
-        state = !state
+        state = .Color
     }
 }

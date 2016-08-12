@@ -17,9 +17,16 @@ protocol Injectable: class {
     static func create() -> Self
 }
 
+// MARK: - Navigation delegate
+protocol NavigationDelegate {
+    func performNavigation(by segueId: String)
+}
+
 class AppDependencies: EventEmitter {
     
     static var sharedInstance = AppDependencies()
+    
+    var appNavigationDelehgate: NavigationDelegate?
     
     var listeners: [String: [Any]]? = [:]
     private var injectables: [String: Injectable] = [:]

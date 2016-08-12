@@ -25,6 +25,8 @@
 		219A9EB41D5E094D00626375 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A9EB31D5E094D00626375 /* Queue.swift */; };
 		219A9EB71D5E0B2A00626375 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A9EB61D5E0B2A00626375 /* AppDependencies.swift */; };
 		219A9EBB1D5E11A200626375 /* TileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A9EBA1D5E11A200626375 /* TileViewController.swift */; };
+		219A9EBD1D5E341800626375 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A9EBC1D5E341800626375 /* Extensions.swift */; };
+		219A9EBF1D5E384E00626375 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A9EBE1D5E384E00626375 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		219A9EB31D5E094D00626375 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		219A9EB61D5E0B2A00626375 /* AppDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
 		219A9EBA1D5E11A200626375 /* TileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileViewController.swift; sourceTree = "<group>"; };
+		219A9EBC1D5E341800626375 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		219A9EBE1D5E384E00626375 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 				219A9E991D5E039500626375 /* Core */,
 				219A9E821D5E035B00626375 /* AppDelegate.swift */,
 				219A9EB61D5E0B2A00626375 /* AppDependencies.swift */,
+				219A9EBC1D5E341800626375 /* Extensions.swift */,
 				219A9E8C1D5E035B00626375 /* Assets.xcassets */,
 				219A9E8E1D5E035B00626375 /* LaunchScreen.storyboard */,
 				219A9E911D5E035B00626375 /* Info.plist */,
@@ -102,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				219A9E861D5E035B00626375 /* Main.storyboard */,
+				219A9EBE1D5E384E00626375 /* MainViewController.swift */,
 				219A9E9A1D5E03A700626375 /* Game */,
 				219A9E9B1D5E03B100626375 /* Scores */,
 			);
@@ -247,10 +253,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				219A9EB71D5E0B2A00626375 /* AppDependencies.swift in Sources */,
+				219A9EBF1D5E384E00626375 /* MainViewController.swift in Sources */,
 				219A9EAE1D5E079B00626375 /* GamePresenter.swift in Sources */,
 				219A9EBB1D5E11A200626375 /* TileViewController.swift in Sources */,
 				219A9EB41D5E094D00626375 /* Queue.swift in Sources */,
 				219A9E831D5E035B00626375 /* AppDelegate.swift in Sources */,
+				219A9EBD1D5E341800626375 /* Extensions.swift in Sources */,
 				219A9EB01D5E07A600626375 /* ScorePresenter.swift in Sources */,
 				219A9EA91D5E070D00626375 /* GameViewController.swift in Sources */,
 				219A9EB21D5E08EF00626375 /* DataStore.swift in Sources */,

@@ -17,7 +17,9 @@ class AppDelegate: UIResponder {
 extension AppDelegate: UIApplicationDelegate {
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
+
         return true
     }
     

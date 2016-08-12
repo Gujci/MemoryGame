@@ -3,12 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="MemoryGame" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,28 +18,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAv-er-2kx">
-                                <rect key="frame" x="217" y="211" width="68" height="40"/>
-                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
-                                <state key="normal" title="Game">
-                                    <color key="titleColor" red="0.92941176889999999" green="0.93333333730000001" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                </state>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="GwH-k8-Z1s">
+                                <rect key="frame" x="20" y="20" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XsA-oN-LrU"/>
+                                    <constraint firstAttribute="width" constant="100" id="eHQ-GV-YDd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLh-Bq-ayh">
+                                <rect key="frame" x="276" y="34.5" width="48" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s0M-Xw-CTp">
+                                <rect key="frame" x="20" y="78" width="560" height="514"/>
                                 <connections>
-                                    <segue destination="Zhj-TP-Cxg" kind="presentation" modalTransitionStyle="flipHorizontal" id="47e-Xb-KpV"/>
+                                    <segue destination="Zhj-TP-Cxg" kind="embed" id="ndF-2j-eQv"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6G-9N-I1d">
-                                <rect key="frame" x="217" y="304" width="68" height="40"/>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6G-9N-I1d">
+                                <rect key="frame" x="526" y="28" width="54" height="35"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
                                 <state key="normal" title="Scores">
-                                    <color key="titleColor" red="0.92941176889999999" green="0.93333333730000001" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="yId-T5-fT4" kind="presentation" modalTransitionStyle="flipHorizontal" id="vX5-sY-27e"/>
+                                    <segue destination="yId-T5-fT4" kind="presentation" identifier="showScores" modalTransitionStyle="flipHorizontal" id="vX5-sY-27e"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.14901960780000001" green="0.1450980392" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="GwH-k8-Z1s" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1Ca-Rr-aE4"/>
+                            <constraint firstItem="VLh-Bq-ayh" firstAttribute="centerY" secondItem="GwH-k8-Z1s" secondAttribute="centerY" id="Jvz-sO-krW"/>
+                            <constraint firstItem="GwH-k8-Z1s" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="N7M-qx-jI8"/>
+                            <constraint firstItem="m6G-9N-I1d" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="TXw-BM-Svc"/>
+                            <constraint firstItem="GwH-k8-Z1s" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="VmJ-te-M0g"/>
+                            <constraint firstItem="m6G-9N-I1d" firstAttribute="centerY" secondItem="GwH-k8-Z1s" secondAttribute="centerY" id="WXh-oP-ctu"/>
+                            <constraint firstItem="VLh-Bq-ayh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y45-4k-5U2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="s0M-Xw-CTp" secondAttribute="bottom" constant="8" id="Z60-6X-1pM"/>
+                            <constraint firstItem="s0M-Xw-CTp" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="d1k-S7-3dm"/>
+                            <constraint firstItem="s0M-Xw-CTp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mds-0Q-bf9"/>
+                            <constraint firstItem="s0M-Xw-CTp" firstAttribute="top" secondItem="GwH-k8-Z1s" secondAttribute="bottom" constant="8" id="zoK-8X-s2X"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="VmJ-te-M0g"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -62,4 +90,7 @@
             <point key="canvasLocation" x="929" y="529"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="267" height="107"/>
+    </resources>
 </document>

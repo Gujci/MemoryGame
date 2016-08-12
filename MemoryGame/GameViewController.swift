@@ -9,11 +9,40 @@
 import UIKit
 
 class GameViewController: UIViewController {
+    
+    @IBOutlet weak var gameAreaView: UIView!
+    
+    override func viewWillAppear(animated: Bool){
+        super.viewWillAppear(animated)
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let presenter: GamePresenter = App.sharedInstance.new()
+        presenter.representation = self
+        
+        gameAreaView.subviews.forEach() { view in
+            view.hidden = false
+        }
     }
+}
 
+extension GameViewController: GameRepresentation {
+    
+    func resetGameArea() {
+        gameAreaView.subviews.forEach() { view in
+            guard let tileView = view.subviews.first?.parentViewController as? TileViewController else { return }
+            tileView.state = .Back
+            
+        }
+        gameAreaView.userInteractionEnabled = false
+        UIView.delay(1.0) { [weak self] in
+            self?.gameAreaView.userInteractionEnabled = true
+        }
+    }
+    
+    func hidePair(at indexes: [Int]) {
+        gameAreaView.subviews.forEach() { view in
+            if indexes.indexOf(view.tag) != nil {
+                view.hidden = true
+            }
+        }
+    }
 }
