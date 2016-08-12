@@ -34,7 +34,7 @@ extension GameViewController: GameRepresentation {
             
         }
         gameAreaView.userInteractionEnabled = false
-        UIView.delay(0.5) { [weak self] in
+        UIView.delay(1.0) { [weak self] in
             self?.gameAreaView.userInteractionEnabled = true
         }
     }

@@ -47,7 +47,7 @@ final class GamePresenter {
     private var prevousIndexGuess: Int?
     private var scoreCount = 0 {
         didSet {
-            if scoreCount == 1 { //TODO: - write me back to 8
+            if scoreCount == 8 {
                 App.sharedInstance.appNavigationDelehgate?.performNavigation(by: "showScores")
                 let scores: ScorePresenter = App.sharedInstance.request()
                 scores.shouldAddNewUser(withPoints: points)

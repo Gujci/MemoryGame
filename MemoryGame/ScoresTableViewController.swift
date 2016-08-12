@@ -44,6 +44,8 @@ extension ScoresTableViewController {
         cell.nameLabel.text = presenter.records![indexPath.row].name
         cell.pointsLabel.text = "\(presenter.records![indexPath.row].score)"
         
+        cell.backgroundColor = UIColor.clearColor()
+        
         return cell
     }
 }

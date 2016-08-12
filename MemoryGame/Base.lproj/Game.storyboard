@@ -16,14 +16,14 @@
                         <viewControllerLayoutGuide type="bottom" id="rmS-DG-wxM"/>
                     </layoutGuides>
                     <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="bk5-w5-DQ8">
-                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="141.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="114" height="144.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="colour1" translatesAutoresizingMaskIntoConstraints="NO" id="H3R-zf-6Xb">
-                                <rect key="frame" x="0.0" y="0.0" width="111.5" height="141.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="114" height="144.5"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_bg" translatesAutoresizingMaskIntoConstraints="NO" id="II4-pl-cSd">
-                                <rect key="frame" x="0.0" y="0.0" width="111" height="141.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="113.5" height="144.5"/>
                                 <gestureRecognizers/>
                             </imageView>
                         </subviews>
@@ -72,106 +72,106 @@
                                 <rect key="frame" x="60" y="0.0" width="480" height="600"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c0C-Qe-sFw">
-                                        <rect key="frame" x="8" y="8" width="464" height="584"/>
+                                        <rect key="frame" x="3" y="3" width="474" height="594"/>
                                         <subviews>
                                             <containerView opaque="NO" tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iUq-D5-7II">
-                                                <rect key="frame" x="352.5" y="0.0" width="111.5" height="141.5"/>
+                                                <rect key="frame" x="360" y="0.0" width="114" height="144.5"/>
                                                 <connections>
                                                     <segue destination="HsU-Xi-niV" kind="embed" id="5C0-aU-xft"/>
                                                 </connections>
                                             </containerView>
                                             <containerView opaque="NO" tag="7" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Df-Ch-dAo">
-                                                <rect key="frame" x="352.5" y="147.5" width="111.5" height="141.5"/>
+                                                <rect key="frame" x="360" y="150.5" width="114" height="143.5"/>
                                                 <connections>
                                                     <segue destination="HsU-Xi-niV" kind="embed" id="ZLH-8b-YZC"/>
                                                 </connections>
                                             </containerView>
                                             <containerView opaque="NO" tag="11" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7H4-5G-xPY">
-                                                <rect key="frame" x="352.5" y="295" width="111.5" height="141.5"/>
+                                                <rect key="frame" x="360" y="300" width="114" height="144.5"/>
                                                 <connections>
                                                     <segue destination="HsU-Xi-niV" kind="embed" id="1iX-VU-lN3"/>
                                                 </connections>
                                             </containerView>
                                             <containerView opaque="NO" tag="15" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oY6-9f-bjL">
-                                                <rect key="frame" x="352.5" y="442.5" width="111.5" height="141.5"/>
+                                                <rect key="frame" x="360" y="450.5" width="114" height="143.5"/>
                                                 <connections>
                                                     <segue destination="HsU-Xi-niV" kind="embed" id="5fN-o9-1pO"/>
                                                 </connections>
                                             </containerView>
                                             <containerView opaque="NO" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3vw-9w-dgC">
-                                                <rect key="frame" x="235" y="0.0" width="111.5" height="141.5"/>
+                                                <rect key="frame" x="240" y="0.0" width="114" height="144.5"/>
                                                 <connections>
                                                     <segue destination="HsU-Xi-niV" kind="embed" id="4mt-AA-b3O"/>
                                                 </connections>
                                             </containerView>
                                             <containerView opaque="NO" tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1yt-eN-pa2">
-                                                <rect key="frame" x="235" y="147.5" width="111.5" height="141.5"/>
+                                                <rect key="frame" x="240" y="150.5" width="114" height="143.5"/>
                                                 <connections>
                                                     <segue destination="HsU-Xi-niV" kind="embed" id="B6B-vq-cte"/>
                                                 </connections>
                                             </containerView>
                                             <containerView opaque="NO" tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mYO-Q7-PFa">
-                                                <rect key="frame" x="235" y="295" width="111.5" height="141.5"/>
+                                                <rect key="frame" x="240" y="300" width="114" height="144.5"/>
                                                 <connections>
                                                     <segue destination="HsU-Xi-niV" kind="embed" id="zRS-q0-DJk"/>
                                                 </connections>
                                             </containerView>
                                             <containerView opaque="NO" tag="14" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cFr-DM-3H2">
-                                                <rect key="frame" x="235" y="442.5" width="111.5" height="141.5"/>
+                                                <rect key="frame" x="240" y="450.5" width="114" height="143.5"/>
                                                 <connections>
                                                     <segue destination="HsU-Xi-niV" kind="embed" id="roi-V1-JEp"/>
                                                 </connections>
                                             </containerView>
                                             <containerView opaque="NO" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D8T-53-sq9">
-                                                <rect key="frame" x="117.5" y="0.0" width="111.5" height="141.5"/>
+                                                <rect key="frame" x="120" y="0.0" width="114" height="144.5"/>
                                                 <connections>
                                                     <segue destination="HsU-Xi-niV" kind="embed" id="HGy-d3-u3n"/>
                                                 </connections>
                                             </containerView>
                                             <containerView opaque="NO" tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdU-bH-V3u">
-                                                <rect key="frame" x="117.5" y="147.5" width="111.5" height="141.5"/>
+                                                <rect key="frame" x="120" y="150.5" width="114" height="143.5"/>
                                                 <connections>
                                                     <segue destination="HsU-Xi-niV" kind="embed" id="0QR-WQ-Mq3"/>
                                                 </connections>
                                             </containerView>
                                             <containerView opaque="NO" tag="9" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4i1-Vf-huz">
-                                                <rect key="frame" x="117.5" y="295" width="111.5" height="141.5"/>
+                                                <rect key="frame" x="120" y="300" width="114" height="144.5"/>
                                                 <connections>
                                                     <segue destination="HsU-Xi-niV" kind="embed" id="zkC-EV-Pmw"/>
                                                 </connections>
                                             </containerView>
                                             <containerView opaque="NO" tag="13" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="flf-7z-lDu">
-                                                <rect key="frame" x="117.5" y="442.5" width="111.5" height="141.5"/>
+                                                <rect key="frame" x="120" y="450.5" width="114" height="143.5"/>
                                                 <connections>
                                                     <segue destination="HsU-Xi-niV" kind="embed" id="eli-J5-6Fc"/>
                                                 </connections>
                                             </containerView>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XjW-Ld-B9c">
-                                                <rect key="frame" x="0.0" y="0.0" width="111.5" height="141.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="114" height="144.5"/>
                                                 <connections>
                                                     <segue destination="HsU-Xi-niV" kind="embed" id="J3Z-cO-T9h"/>
                                                 </connections>
                                             </containerView>
                                             <containerView opaque="NO" tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j9z-Iv-3hk">
-                                                <rect key="frame" x="0.0" y="147.5" width="111.5" height="141.5"/>
+                                                <rect key="frame" x="0.0" y="150.5" width="114" height="143.5"/>
                                                 <connections>
                                                     <segue destination="HsU-Xi-niV" kind="embed" id="2uh-13-IsN"/>
                                                 </connections>
                                             </containerView>
                                             <containerView opaque="NO" tag="8" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Lg-aw-ySR">
-                                                <rect key="frame" x="0.0" y="295" width="111.5" height="141.5"/>
+                                                <rect key="frame" x="0.0" y="300" width="114" height="144.5"/>
                                                 <connections>
                                                     <segue destination="HsU-Xi-niV" kind="embed" id="3RK-Lx-zH4"/>
                                                 </connections>
                                             </containerView>
                                             <containerView opaque="NO" tag="12" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KnA-xE-vLD">
-                                                <rect key="frame" x="0.0" y="442.5" width="111.5" height="141.5"/>
+                                                <rect key="frame" x="0.0" y="450.5" width="114" height="143.5"/>
                                                 <connections>
                                                     <segue destination="HsU-Xi-niV" kind="embed" id="zJ3-gc-Ebc"/>
                                                 </connections>
                                             </containerView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.14901960780000001" green="0.1450980392" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="KnA-xE-vLD" firstAttribute="width" secondItem="1Lg-aw-ySR" secondAttribute="width" id="1xb-J3-mzU"/>
                                             <constraint firstItem="flf-7z-lDu" firstAttribute="height" secondItem="4i1-Vf-huz" secondAttribute="height" id="2eo-JA-sNS"/>
@@ -254,13 +254,13 @@
                                         </variation>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="c0C-Qe-sFw" firstAttribute="leading" secondItem="ho4-81-Ilk" secondAttribute="leading" constant="8" id="2c3-aB-Zyb"/>
-                                    <constraint firstAttribute="trailing" secondItem="c0C-Qe-sFw" secondAttribute="trailing" constant="8" id="Fwx-h9-cSw"/>
-                                    <constraint firstAttribute="bottom" secondItem="c0C-Qe-sFw" secondAttribute="bottom" constant="8" id="Ncc-ZH-ksx"/>
+                                    <constraint firstItem="c0C-Qe-sFw" firstAttribute="leading" secondItem="ho4-81-Ilk" secondAttribute="leading" constant="3" id="2c3-aB-Zyb"/>
+                                    <constraint firstAttribute="trailing" secondItem="c0C-Qe-sFw" secondAttribute="trailing" constant="3" id="Fwx-h9-cSw"/>
+                                    <constraint firstAttribute="bottom" secondItem="c0C-Qe-sFw" secondAttribute="bottom" constant="3" id="Ncc-ZH-ksx"/>
                                     <constraint firstAttribute="width" secondItem="ho4-81-Ilk" secondAttribute="height" multiplier="16:20" id="Y6H-hu-xML"/>
-                                    <constraint firstItem="c0C-Qe-sFw" firstAttribute="top" secondItem="ho4-81-Ilk" secondAttribute="top" constant="8" id="YWT-61-X9A"/>
+                                    <constraint firstItem="c0C-Qe-sFw" firstAttribute="top" secondItem="ho4-81-Ilk" secondAttribute="top" constant="3" id="YWT-61-X9A"/>
                                 </constraints>
                             </view>
                         </subviews>
