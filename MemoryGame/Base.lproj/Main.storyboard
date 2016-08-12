@@ -68,6 +68,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="pointsCountLabel" destination="VLh-Bq-ayh" id="YNp-oU-mNH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

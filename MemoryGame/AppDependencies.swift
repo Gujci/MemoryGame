@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import EventEmitter
 
 typealias App = AppDependencies
 
@@ -22,7 +21,7 @@ protocol NavigationDelegate {
     func performNavigation(by segueId: String)
 }
 
-class AppDependencies: EventEmitter {
+class AppDependencies {
     
     static var sharedInstance = AppDependencies()
     
@@ -47,7 +46,6 @@ extension AppDependencies {
     func new<T: Injectable>() -> T {
         let newModule = T.create()
         injectables[T.id] = newModule
-        emit("didAddModuleWithId", information: T.id)
         return newModule
     }
 }

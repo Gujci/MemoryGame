@@ -14,7 +14,6 @@
 		219A9E901D5E035B00626375 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 219A9E8E1D5E035B00626375 /* LaunchScreen.storyboard */; };
 		219A9E9D1D5E03F200626375 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 219A9E9C1D5E03F200626375 /* Cartfile */; };
 		219A9E9F1D5E048B00626375 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 219A9E9E1D5E048B00626375 /* .gitignore */; };
-		219A9EA11D5E04CF00626375 /* EventEmitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219A9EA01D5E04CF00626375 /* EventEmitter.framework */; };
 		219A9EA31D5E04DB00626375 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219A9EA21D5E04DB00626375 /* CoreData.framework */; };
 		219A9EA71D5E062000626375 /* Game.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 219A9EA51D5E062000626375 /* Game.storyboard */; };
 		219A9EA91D5E070D00626375 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A9EA81D5E070D00626375 /* GameViewController.swift */; };
@@ -27,6 +26,12 @@
 		219A9EBB1D5E11A200626375 /* TileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A9EBA1D5E11A200626375 /* TileViewController.swift */; };
 		219A9EBD1D5E341800626375 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A9EBC1D5E341800626375 /* Extensions.swift */; };
 		219A9EBF1D5E384E00626375 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A9EBE1D5E384E00626375 /* MainViewController.swift */; };
+		219A9EC11D5E5CA200626375 /* ScoresTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A9EC01D5E5CA200626375 /* ScoresTableViewController.swift */; };
+		219A9EC31D5E5F3900626375 /* ScoresTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A9EC21D5E5F3900626375 /* ScoresTableViewCell.swift */; };
+		219A9EC51D5E690200626375 /* HighScoresManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A9EC41D5E690200626375 /* HighScoresManager.swift */; };
+		219A9EC71D5E699E00626375 /* HighScoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A9EC61D5E699E00626375 /* HighScoreData.swift */; };
+		219A9ECA1D5E6A0F00626375 /* HighScore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A9EC81D5E6A0F00626375 /* HighScore+CoreDataProperties.swift */; };
+		219A9ECB1D5E6A0F00626375 /* HighScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219A9EC91D5E6A0F00626375 /* HighScore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +44,6 @@
 		219A9E911D5E035B00626375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		219A9E9C1D5E03F200626375 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		219A9E9E1D5E048B00626375 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		219A9EA01D5E04CF00626375 /* EventEmitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventEmitter.framework; path = Carthage/Build/iOS/EventEmitter.framework; sourceTree = "<group>"; };
 		219A9EA21D5E04DB00626375 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		219A9EA61D5E062000626375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Game.storyboard; sourceTree = "<group>"; };
 		219A9EA81D5E070D00626375 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +56,12 @@
 		219A9EBA1D5E11A200626375 /* TileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileViewController.swift; sourceTree = "<group>"; };
 		219A9EBC1D5E341800626375 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		219A9EBE1D5E384E00626375 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		219A9EC01D5E5CA200626375 /* ScoresTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoresTableViewController.swift; sourceTree = "<group>"; };
+		219A9EC21D5E5F3900626375 /* ScoresTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoresTableViewCell.swift; sourceTree = "<group>"; };
+		219A9EC41D5E690200626375 /* HighScoresManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScoresManager.swift; sourceTree = "<group>"; };
+		219A9EC61D5E699E00626375 /* HighScoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScoreData.swift; sourceTree = "<group>"; };
+		219A9EC81D5E6A0F00626375 /* HighScore+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HighScore+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		219A9EC91D5E6A0F00626375 /* HighScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +70,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				219A9EA31D5E04DB00626375 /* CoreData.framework in Frameworks */,
-				219A9EA11D5E04CF00626375 /* EventEmitter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,7 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				219A9EA21D5E04DB00626375 /* CoreData.framework */,
-				219A9EA01D5E04CF00626375 /* EventEmitter.framework */,
 				219A9E9C1D5E03F200626375 /* Cartfile */,
 				219A9E9E1D5E048B00626375 /* .gitignore */,
 				219A9E811D5E035B00626375 /* MemoryGame */,
@@ -127,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				219A9EB31D5E094D00626375 /* Queue.swift */,
+				219A9EC41D5E690200626375 /* HighScoresManager.swift */,
+				219A9ECC1D5E6A2200626375 /* Models */,
 				219A9EB51D5E0AC600626375 /* Storage */,
 			);
 			name = Core;
@@ -146,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				219A9EAA1D5E072200626375 /* Scores.storyboard */,
+				219A9EC01D5E5CA200626375 /* ScoresTableViewController.swift */,
+				219A9EC21D5E5F3900626375 /* ScoresTableViewCell.swift */,
 			);
 			name = Scores;
 			sourceTree = "<group>";
@@ -153,10 +165,28 @@
 		219A9EB51D5E0AC600626375 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
-				219A9E891D5E035B00626375 /* MemoryGame.xcdatamodeld */,
 				219A9EB11D5E08EF00626375 /* DataStore.swift */,
+				219A9E891D5E035B00626375 /* MemoryGame.xcdatamodeld */,
+				219A9ECE1D5E6A4B00626375 /* Entities_generated */,
 			);
 			name = Storage;
+			sourceTree = "<group>";
+		};
+		219A9ECC1D5E6A2200626375 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				219A9EC61D5E699E00626375 /* HighScoreData.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		219A9ECE1D5E6A4B00626375 /* Entities_generated */ = {
+			isa = PBXGroup;
+			children = (
+				219A9EC81D5E6A0F00626375 /* HighScore+CoreDataProperties.swift */,
+				219A9EC91D5E6A0F00626375 /* HighScore.swift */,
+			);
+			name = Entities_generated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,7 +199,6 @@
 				219A9E7B1D5E035B00626375 /* Sources */,
 				219A9E7C1D5E035B00626375 /* Frameworks */,
 				219A9E7D1D5E035B00626375 /* Resources */,
-				219A9EA41D5E052D00626375 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -230,23 +259,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		219A9EA41D5E052D00626375 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/EventEmitter.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		219A9E7B1D5E035B00626375 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -254,15 +266,21 @@
 			files = (
 				219A9EB71D5E0B2A00626375 /* AppDependencies.swift in Sources */,
 				219A9EBF1D5E384E00626375 /* MainViewController.swift in Sources */,
+				219A9EC51D5E690200626375 /* HighScoresManager.swift in Sources */,
+				219A9EC31D5E5F3900626375 /* ScoresTableViewCell.swift in Sources */,
+				219A9ECA1D5E6A0F00626375 /* HighScore+CoreDataProperties.swift in Sources */,
 				219A9EAE1D5E079B00626375 /* GamePresenter.swift in Sources */,
 				219A9EBB1D5E11A200626375 /* TileViewController.swift in Sources */,
 				219A9EB41D5E094D00626375 /* Queue.swift in Sources */,
 				219A9E831D5E035B00626375 /* AppDelegate.swift in Sources */,
 				219A9EBD1D5E341800626375 /* Extensions.swift in Sources */,
 				219A9EB01D5E07A600626375 /* ScorePresenter.swift in Sources */,
+				219A9EC11D5E5CA200626375 /* ScoresTableViewController.swift in Sources */,
+				219A9ECB1D5E6A0F00626375 /* HighScore.swift in Sources */,
 				219A9EA91D5E070D00626375 /* GameViewController.swift in Sources */,
 				219A9EB21D5E08EF00626375 /* DataStore.swift in Sources */,
 				219A9E8B1D5E035B00626375 /* MemoryGame.xcdatamodeld in Sources */,
+				219A9EC71D5E699E00626375 /* HighScoreData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

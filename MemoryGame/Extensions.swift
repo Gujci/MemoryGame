@@ -8,6 +8,7 @@
 
 import UIKit
 
+// MARK: - UIView
 extension UIView {
     var parentViewController: UIViewController? {
         var parentResponder: UIResponder? = self
@@ -30,6 +31,7 @@ extension UIView {
     }
 }
 
+// MARK: - MutableCollectionType
 extension MutableCollectionType where Index == Int {
     
     mutating func shuffle() -> Self {

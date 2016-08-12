@@ -8,15 +8,32 @@
 
 import Foundation
 
+// MARK: - Needed Protocols
 protocol GameRepresentation {
     
     func resetGameArea()
     func hidePair(at indexes: [Int])
 }
 
+protocol GamePointRepresentation {
+    
+    func set(points: Int)
+}
+
+// MARK: - Presenter
 final class GamePresenter {
     
     var representation: GameRepresentation?
+    var pointCounter: GamePointRepresentation? {
+        didSet {
+            pointCounter?.set(points)
+        }
+    }
+    var points: Int = 0 {
+        didSet {
+            pointCounter?.set(points)
+        }
+    }
     
     lazy private var cards: [String] = {
         var returnValue: [String] = []
@@ -24,20 +41,22 @@ final class GamePresenter {
             returnValue.append("colour\(i)")
         }
         returnValue = returnValue + returnValue
-        
         return returnValue.shuffle()
     }()
     
     private var prevousIndexGuess: Int?
     private var scoreCount = 0 {
         didSet {
-            if scoreCount == 8 {
+            if scoreCount == 1 { //TODO: - write me back to 8
                 App.sharedInstance.appNavigationDelehgate?.performNavigation(by: "showScores")
+                let scores: ScorePresenter = App.sharedInstance.request()
+                scores.shouldAddNewUser(withPoints: points)
             }
         }
     }
 }
 
+// MARK: - Injectable
 extension GamePresenter: Injectable {
     
     static var id: String { return "Game" }
@@ -47,6 +66,7 @@ extension GamePresenter: Injectable {
     }
 }
 
+// MARK: - TileDataSource
 extension GamePresenter: TileDataSource {
     
     func imageName(forTag tag: Int?) -> String? {
@@ -55,6 +75,7 @@ extension GamePresenter: TileDataSource {
     }
 }
 
+// MARK: - TileDelgate
 extension GamePresenter: TileDelgate {
     
     func didChanged(to state: TileState, at tag: Int?) {
@@ -66,10 +87,10 @@ extension GamePresenter: TileDelgate {
             
             representation?.hidePair(at: [prevousIndex, index])
             scoreCount += 1
-            //Increment points
+            points += 2
         }
         else {
-            //Decrement points
+            points -= 1
         }
         
         prevousIndexGuess = nil

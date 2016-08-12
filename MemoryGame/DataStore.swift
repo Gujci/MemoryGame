@@ -11,17 +11,19 @@ import Foundation
 import Foundation
 import CoreData
 
+// MARK: - Storable protocol
 protocol Storable {
     associatedtype ManagedObjectType: NSManagedObject
     static var entityName: String {get}
     
-    func saveToEnity(inContext moc: NSManagedObjectContext, withManager cacheManager: DataStore) throws -> ManagedObjectType
-    init(withEntity: ManagedObjectType) throws
+    func saveToEnity(inContext moc: NSManagedObjectContext, withManager storeManager: DataStore) throws -> ManagedObjectType
+    init(with entity: ManagedObjectType) throws
 }
 
+// MARK: - Store errors 
 enum DataStoreError: ErrorType {
     case CouldNotInitiate
-    case CouldNotSaveToCace
+    case CouldNotSave
 }
 
 final class DataStore {
@@ -89,7 +91,7 @@ extension DataStore {
                     do {
                         results = try validRes.map() { element in
                             if let entity = element as? T.ManagedObjectType {
-                                return try T(withEntity: entity)
+                                return try T(with: entity)
                             }
                             else {
                                 throw DataStoreError.CouldNotInitiate
@@ -109,7 +111,7 @@ extension DataStore {
 // MARK: - Save
 extension DataStore {
     
-    func saveObjectToCache<T: Storable>(object: T) {
+    func saveObjectToStore<T: Storable>(object: T) {
         if let moc = managedObjectContext {
             moc.performBlockAndWait() {
                 do {
@@ -122,9 +124,9 @@ extension DataStore {
         }
     }
     
-    func saveObjectsToCache<T: Storable>(objects: [T]) {
+    func saveObjectsToStore<T: Storable>(objects: [T]) {
         objects.forEach() { object in
-            saveObjectToCache(object)
+            saveObjectToStore(object)
         }
     }
 }
